@@ -10,6 +10,22 @@
   --bg-image-mobile: url('/bg1.svg'); /* For mobile screens */
 }
 
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+.animate-fade-out {
+  animation: fade-out 1s ease-out forwards;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
