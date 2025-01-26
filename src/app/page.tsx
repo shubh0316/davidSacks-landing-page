@@ -8,7 +8,7 @@ import content from "@/assets/content.svg";
 import button from "@/assets/button.svg";
 import follow from "@/assets/follow.svg";
 import twitter from "@/assets/twitter.svg";
-
+import content2 from "@/assets/content2.svg";
 export default function Home() {
   const [loading, setLoading] = useState(true);
   const [moveUp, setMoveUp] = useState(false);
@@ -45,7 +45,7 @@ export default function Home() {
           <div className="flex justify-around items-center">
             <Image src={sack} alt="sack" />
           </div>
-          <div className="flex flex-col justify-around space-y-8 items-center mt-40">
+          <div className="flex flex-col justify-around space-y-8 items-center mt-20 md:mt-40">
             <Image src={profile} alt="profile" />
             <Image src={name} alt="name" />
             <Image src={content} alt="content" />
@@ -60,6 +60,7 @@ export default function Home() {
               </a>
             </div>
             <Image src={button} alt="button" />
+            <Image src={content2} alt="content2" />
           </div>
         </div>
       )}
