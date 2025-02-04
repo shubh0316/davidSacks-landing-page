@@ -14,10 +14,8 @@ export default function Home() {
   const [moveUp, setMoveUp] = useState(false);
 
   useEffect(() => {
-    // Display the loader for 2000ms and then trigger the upward move
     const timer1 = setTimeout(() => setMoveUp(true), 1000);
-    // After the upward move, remove loader from the DOM
-    const timer2 = setTimeout(() => setLoading(false), 1500); // Add 500ms for the upward movement
+    const timer2 = setTimeout(() => setLoading(false), 1500);
 
     return () => {
       clearTimeout(timer1);
@@ -33,7 +31,6 @@ export default function Home() {
             moveUp ? "-translate-y-full" : "translate-y-0"
           }`}
         >
-          {/* Make the loader take full height and width of the screen */}
           <img
             src="/loader.svg"
             alt="Loading..."
@@ -45,22 +42,22 @@ export default function Home() {
           <div className="flex justify-around items-center">
             <Image src={sack} alt="sack" />
           </div>
-          <div className="flex flex-col justify-around space-y-8 items-center mt-20 md:mt-40">
+          <div className="flex flex-col justify-around space-y-8 items-center mt-20 md:mt-20">
             <Image src={profile} alt="profile" />
             <Image src={name} alt="name" />
             <Image src={content} alt="content" />
             <div className="flex space-x-2">
-              <Image src={follow} alt="follow" />
+              <Image src={follow} alt="follow" width={130} />
               <a
-                href="https://x.com/davidsacks47"
+                href="https://x.com/buysackscoin"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image src={twitter} alt="twitter" />
+                <Image src={twitter} alt="twitter" width={140} />
               </a>
             </div>
             <Image src={button} alt="button" />
-            <Image src={content2} alt="content2" />
+            <div className="text-xl text-center md:w-1/2">SACKS coin is a rally token to show support for the work of the White House Crypto and AI Czar and the advancement of crypto and AI policy. SACKS coin, DavidSacksCoin.com, and SacksCoin.com is a community driven initiative and is not directly endorsed by David Sacks or the U.S. Government.</div>
           </div>
         </div>
       )}
