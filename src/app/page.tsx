@@ -8,7 +8,6 @@ import content from "@/assets/content.svg";
 import button from "@/assets/button.svg";
 import follow from "@/assets/follow.svg";
 import twitter from "@/assets/twitter.svg";
-import content2 from "@/assets/content2.svg";
 export default function Home() {
   const [loading, setLoading] = useState(true);
   const [moveUp, setMoveUp] = useState(false);
