@@ -56,7 +56,7 @@ export default function Home() {
               </a>
             </div>
             <Image src={button} alt="button" />
-            <div className="text-xl text-center md:w-1/2">SACKS coin is a rally token to show support for the work of the White House Crypto and AI Czar and the advancement of crypto and AI policy. SACKS coin, DavidSacksCoin.com, and SacksCoin.com is a community driven initiative and is not directly endorsed by David Sacks or the U.S. Government.</div>
+            <div className="text-xl text-center md:w-1/2">SACKS coin is a rally token to show support for the work of the White House Crypto and AI Czar and the advancement of crypto and AI policy. SACKS coin and SacksCoin.com is a community driven initiative and is not directly endorsed by David Sacks or the U.S. Government.</div>
           </div>
         </div>
       )}
